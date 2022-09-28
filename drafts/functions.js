@@ -26,23 +26,25 @@
 //ועכשיו מקבלים את אותה הוספת מתודה בלי שנראה בלוג המילה פונקציה
 // ועכשיו לדרך העדכנית והרבה יותר יפה לכתוב את אותם פונקציות
 // שיטת קלאס!
-class Baba{
-    constructor(Cushin, Home, Ball){
-        this.firstName=Cushin;
-        this.lastName=Home;
-        this.dob=Ball;
+class Baba {
+    constructor(firstName, lastName, dob){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = dob;
     }
-    getBirthYear(){
+    getBirthYear() {
         return this.dob.getFullYear();
     }
-    getFullName(){
+    getFullName() {
         return `${this.firstName} ${this.lastName}`;
     }
 }
 
-const ciiz1= new Baba('ChuChu', 'Naplem', '5-7-1999');
-const citiz = new Baba('Bill', 'Noka', '24-6-1997');
+const citiz1 = new Baba('ChuChu', 'Naplem', '5-7-1999');
+const citiz2 = new Baba('Bill', 'Noka', '24-6-1997');
 
+// console.log(citiz1.getBirthYear());
+console.log(citiz2.getFullName());
 
 function addNum(num1=1, num2=1){
     console.log(num1 + num2);
@@ -67,10 +69,10 @@ function returnNum(){
     return Math.random
 }
 //לעומת
-let returnNum2 = () = Math.random;
+let returnNum2 = (a) = Math.random;
 
 document.addEventListener('click', function() {
     console.log('Click');
 })
-
+//לעומת
 document.addEventListener('click' ,() => console.log('Click'))
